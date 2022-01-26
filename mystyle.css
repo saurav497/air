@@ -1,81 +1,210 @@
-<!DOCTYPE html>
-<html lang="en">
+@font-face {
+    font-family: 'DosisBold';
+    src: url('./fonts/DosisBold.eot');
+    src: url('./fonts/DosisBold.eot') format('embedded-opentype'),
+         url('./fonts/DosisBold.woff2') format('woff2'),
+         url('./fonts/DosisBold.woff') format('woff'),
+         url('./fonts/DosisBold.ttf') format('truetype'),
+         url('./fonts/DosisBold.svg#DosisBold') format('svg');
+}
 
-<head>
-    <meta charset="utf-8">
-    <title>Air Page</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/mystyle.css">
-</head>
-
-<body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo_box">
-                    <a href="index.html">Air</a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#Home" class="active">Home</a></li>
-                        <li><a href="#About">About Us</a></li>
-                        <li><a href="#Prod">Products</a></li>
-                        <li><a href="#Service">Services</a></li>
-                        <li><a href="#Blog">Blogs</a></li>
-                        <li><a href="#Contact">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <section class="banner-section" id="Home">
-        <div class="banner-content">
-            <h1>Creativity is a wild mind & A disciplined Eye</h1>
-            <p>free html5 templates made by <a>freehtml5.co</a> </p>
-            <a href="#" class="btn">Show Demo</a>
-            <a href="#" class="ylw-btn">Learn More</a>
-        </div>
-    </section>
-    <section class="service-section" id="Service">
-        <div class="container">
-        <h2>
-            Services
-        </h2>
-        <div class="row">
-        <div class="col">
-            <h3>Marketing</h3>
-            <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
-            <a href="#">Learn More</a>
-        </div>
-        <div class="col">
-            <h3>Search Engine</h3>
-            <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
-            <a href="#">Learn More</a>
-        </div>
-        <div class="col">
-            <h3>Earn Money</h3>
-            <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
-            <a href="#">Learn More</a>
-        </div>
-        <div class="col">
-            <h3>Enterpreneur</h3>
-            <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
-            <a href="#">Learn More</a>
-        </div>
-        <div class="col">
-            <h3>Stragic Plan</h3>
-            <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
-            <a href="#">Learn More</a>
-        </div>
-        <div class="col">
-            <h3>Support</h3>
-            <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
-            <a href="#">Learn More</a>
-        </div>
-    </div>
-</div>
-    </section>
-</body>
+@font-face {
+    font-family: 'DosisRegular';
+    src: url('../fonts/DosisRegular.eot');
+    src: url('../fonts/DosisRegular.eot') format('embedded-opentype'),
+         url('../fonts/DosisRegular.woff2') format('woff2'),
+         url('../fonts/DosisRegular.woff') format('woff'),
+         url('../fonts/DosisRegular.ttf') format('truetype'),
+         url('../fonts/DosisRegular.svg#DosisRegular') format('svg');
+}
 
 
-</html>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'DosisBold';
+}
+
+header{
+    background-color: #fabdd1;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+header .logo_box{
+    float:left;
+}
+
+.btn{
+    color: #ffffff;
+    background-color: #dd356e;
+    padding: 10px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50px;
+    font-family: 'DosisBold';
+}
+
+.btn:hover{
+    color: #ffffff;
+    background-color: #b7114a;
+}
+
+
+.ylw-btn{
+    color: #000000;
+    background-color: yellow;
+    padding: 10px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50px;
+    font-family: 'DosisBold';
+}
+
+.ylw-btn:hover{
+    color:#000000;
+    background-color:#d8d836;
+}
+
+header .header-content{
+    display: table;
+    width:100%;
+    padding: 10px 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header .logo_box a{
+    font-size: 30px;
+    font-family: 'DosisBold';
+    color:#dd356e;
+    display: block;
+    text-transform: uppercase;
+}
+
+nav{
+    float:right;
+}
+
+a{
+    color:#dd356e;
+}
+
+a:hover{
+    color:#b7114a;
+}
+
+.container{
+    width: 1170px;
+    padding:0 15px;
+    margin:0 auto;
+    
+}
+
+body{
+    font-family: 'DosisRegular';
+    background-color: #fff;
+    color:#222222;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+nav ul li{
+    float:left;
+}
+
+nav ul li a{
+    font-size: 13px;
+    color:#222222;
+    display:block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    color:#ffffff;
+    background-color: #dd356e;
+    border-radius: 50px;
+}
+
+
+nav ul li .active{
+    color:#ffffff;
+    background-color: #dd356e;
+    border-radius: 60px;
+}
+
+.banner-section{
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+
+.banner-section .banner-content{    
+    position: absolute;
+    left:0;
+    right:0;
+    margin:0 auto;
+    width:100%;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.banner-section h1{
+    font-size : 28px;
+    text-transform: uppercase;
+    max-width:400px;
+    margin: 0 auto 20px;
+    text-transform: uppercase;
+}
+
+.banner-section p{
+    margin:0 0 15px 0;
+}
+
+.service-section{
+    background-color: blanchedalmond;
+    padding:30px 10px;
+}
+
+.service-section h2{
+    font-size:20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding:20px 0 60px 0;
+}
+
+.service-section .col p{
+    font-size:15px;
+    padding:20px 0;
+}
+
+.service-section .row{
+    display: table;
+    width:100%;
+}
+
+.service-section .col{
+    float:left;
+    width:25%;
+    padding:10px 30px 30px;
+    margin-left: -4px;
+}
+
+.service-section .col h3{
+    font-size: 18px;
+}
