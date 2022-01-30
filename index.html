@@ -12,11 +12,20 @@
 </head>
 
 <body>
+    <script>
+        $(document).ready(function () {
+            $('#menu').click(function () {
+                $('nav').toggle("slow");
+            });
+        });
+
+    </script>
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo_box">
                     <a href="index.html">Air</a>
+                    <span id="menu">Menu</span>
                 </div>
                 <nav>
                     <ul>
@@ -41,49 +50,109 @@
     </section>
     <section class="service-section" id="Service">
         <div class="container">
-        <h2>
-            Services
-        </h2>
-        <div class="row">
-        <div class="col">
-            <span class="fa fa-bullhorn"></span>
-            <h3>Marketing</h3>
-            <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
-            <a href="#">Learn More <span class="fas fa-arrow-right"></span></a>
+            <h2 class="common-heading">
+                Services
+            </h2>
+            <div class="row">
+                <div class="col">
+                    <span class="fa fa-bullhorn"></span>
+                    <h3>Marketing</h3>
+                    <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
+                    <a href="#">Learn More <span class="fas fa-arrow-right"></span></a>
+                </div>
+                <div class="col">
+                    <span class="fa fa-search"></span>
+                    <h3>Search Engine</h3>
+                    <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
+                    <a href="#">Learn More<span class="fas fa-arrow-right"></span></a>
+                </div>
+                <div class="col">
+                    <span class="fa fa-money-bill-alt"></span>
+                    <h3>Earn Money</h3>
+                    <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
+                    <a href="#">Learn More<i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="col">
+                    <span class="fa fa-user-alt"></span>
+                    <h3>Enterpreneur</h3>
+                    <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
+                    <a href="#">Learn More<span class="fas fa-arrow-right"></span></a>
+                </div>
+                <div class="col">
+                    <span class="fa fa-file-alt"></span>
+                    <h3>Stragic Plan</h3>
+                    <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
+                    <a href="#">Learn More<span class="fas fa-arrow-right"></span></a>
+                </div>
+                <div class="col">
+                    <span class="fa fa-headset"></span>
+                    <h3>Support</h3>
+                    <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
+                    <a href="#">Learn More<span class="fas fa-arrow-right"></span></a>
+                </div>
+            </div>
         </div>
-        <div class="col">
-            <span class="fa fa-search"></span>
-            <h3>Search Engine</h3>
-            <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
-            <a href="#">Learn More<span class="fas fa-arrow-right"></span></a>
-        </div>
-        <div class="col">
-            <span class="fa fa-money-bill-alt"></span>
-            <h3>Earn Money</h3>
-            <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
-            <a href="#">Learn More<span class="fas fa-arrow-right"></span></a>
-        </div>
-        <div class="col">
-            <span class="fa fa-user-alt"></span>
-            <h3>Enterpreneur</h3>
-            <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
-            <a href="#">Learn More<span class="fas fa-arrow-right"></span></a>
-        </div>
-        <div class="col">
-            <span class="fa fa-file-alt"></span>
-            <h3>Stragic Plan</h3>
-            <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
-            <a href="#">Learn More<span class="fas fa-arrow-right"></span></a>
-        </div>
-        <div class="col">
-            <span class="fa fa-headset"></span>
-            <h3>Support</h3>
-            <p>Facilius ipsum reprehenderit nemo molestias.Aut cum mollitia reprehenderit</p>
-            <a href="#">Learn More<span class="fas fa-arrow-right"></span></a>
-        </div>
-    </div>
-</div>
     </section>
+    <section class="call-to-action" id="Contact">
+        <h2 class="common-heading">Call to Action</h2>
+        <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident. sunt in culpa qui officia deserunt mollit anim id est
+            laborum
+        </p>
+        <a href="#" class="btn">Call to Action</a>
+    </section>
+    <section class="recent-post">
+        <h2 class="common-heading">Recent Post</h2>
+        <p>
+            Dignissimos asperiores vitae velit veniam totam fuga molestia accusamus alias autem provident.Odit ab
+            aliquam dolor eius
+        </p>
+        <div class="row">
+            <div class="col">
+                <div class="pur-color-box"></div>
+                <div class="col-content">
+                    <h3>Feb. 15th 2016</h3>
+                    <h2>Photoshoot On The Street</h2>
+                    <p>Far far away , behind the word mountains , far from the countries Vokalia and Consonantia, there live the blind texts</p>
+
+                    <div class="foot-text">
+                        <span class="likeview"><i class="fas fa-eye"></i>249 <i class="fas fa-heart"></i> 1,308</span>
+                        <a href="#">Learn More<span class="fas fa-arrow-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="sg-color-box"></div>
+                <div class="col-content">
+                    <h3>Feb. 15th 2016</h3>
+                    <h2>Surfing At Philippines</h2>
+                    <p>Far far away , behind the word mountains , far from the countries Vokalia and Consonantia, there live the blind texts</p>
+
+                    <div class="foot-text">
+                        <span class="likeview"><i class="fas fa-eye"></i>249 <i class="fas fa-heart"></i> 1,308</span>
+                        <a href="#">Learn More<span class="fas fa-arrow-right"></span> </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="color-box"></div>
+                <div class="col-content">
+                    <h3>Feb. 15th 2016</h3>
+                    <h2>Focus On Underwater</h2>
+                    <p>Far far away , behind the word mountains , far from the countries Vokalia and Consonantia, there live the blind texts</p>
+
+                    <div class="foot-text">
+                        <span class="likeview"><i class="fas fa-eye"></i>249 <i class="fas fa-heart"></i> 1,308</span>
+                        <a href="#">Learn More<span class="fas fa-arrow-right"></span> </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
 </body>
 
 
