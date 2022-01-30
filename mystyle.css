@@ -19,8 +19,6 @@
 }
 
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -43,6 +41,13 @@ a{
 
 header .logo_box{
     float:left;
+}
+
+header .logo_box span{
+    display: none;
+    color: #dd356e;
+    font-size: 30px;
+    font-family: 'DosisBold';
 }
 
 .btn{
@@ -169,7 +174,7 @@ nav ul li .active{
 .banner-section h1{
     font-size : 28px;
     text-transform: uppercase;
-    max-width:400px;
+    max-width:350px;
     margin: 0 auto 20px;
     text-transform: uppercase;
 }
@@ -183,7 +188,7 @@ nav ul li .active{
     padding:30px 10px;
 }
 
-.service-section h2{
+.common-heading{
     font-size:20px;
     text-align: center;
     text-transform: uppercase;
@@ -216,6 +221,7 @@ nav ul li .active{
     font-size:15px;
     padding-left: 10px;
 }
+
 .service-section .col .fa{
 position: absolute;
 left:0;
@@ -229,9 +235,176 @@ font-size: 30px;
 padding-top: 15px;
 }
 
+.call-to-action{
+    text-align: center;
+    padding: 60px 0;
+    background: linear-gradient(rgba(2,2,2,0.4),rgba(0,0,0,0.6)),url("./image/bg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.call-to-action .common-heading{
+    color: white;
+}
+
+.call-to-action p{
+    width:75%;
+    margin:0 auto;
+    color:#fff;
+    padding-bottom: 40px;
+}
+
+.call-to-action .btn{
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+}
+
+
+.call-to-action .btn:hover{
+    background-color: #dd356e;
+    border-color:#dd356e;
+}
+
+
+.recent-post{
+    padding-top:60px;
+    height: 150vh;
+    text-align: center;
+}
+
+.recent-post p{
+    margin:0 auto;
+    width: 40%;
+    padding-bottom: 80px;
+}
+
+.recent-post .row{
+    display: table;
+    width:80%;
+    margin:0 auto;
+}
+
+.recent-post .col{
+    width:33%;
+    float:left;
+    padding:0 20px;
+}
+
+.recent-post .col .color-box{
+    width:100%;
+    margin :0 auto;
+    background-color: maroon;
+    height:200px;
+}
+
+.recent-post .col .pur-color-box{
+    width:100%;
+    margin :0 auto;
+    background-color: maroon;
+    height:200px;
+}
+
+
+.recent-post .col .sg-color-box{
+    width:100%;
+    margin :0 auto;
+    background-color: seagreen;
+    height:200px;
+}
+
+
+.recent-post .col .col-content{
+    width:100%;
+    margin:0 auto;
+    padding:20px 10px;
+    box-shadow: 1px 1px 10px 1px gray;
+}
+
+
+.recent-post .col-content h3{
+    font-size:11px;
+    color:gray;
+    text-align: left;
+    font-family: 'DosisRegular';
+}
+
+
+.recent-post .col h2{
+    margin :0 auto;
+    display: block;
+    padding:20px 0;
+    font-size:16px;
+}
+
+.recent-post .col p{
+    width:100%;
+    font-size:13px;
+    text-align: justify;
+    padding: 0 20px 20px;
+}
+
+.recent-post .foot-text{
+    font-size: 13px;
+    display: table;
+    width:100%;
+    border-top: 1px solid gray;
+    padding-top:10px;
+    margin: 0 auto;
+}
+
+.recent-post .foot-text .likeview{
+
+    float : left;
+}
+
+.recent-post .foot-text .likeview i{
+    padding: 0 5px;
+    color:#dd356e;
+}
+
+
+.recent-post .foot-text a{
+    float: right;
+}
+
+.recent-post .foot-text a span{
+    padding: 0 5px;
+}
 
 @media screen and (max-width:600px){
 
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+nav{
+    padding-top: 10px;
+    transition: 40s all;
+}
+
+    header .logo_box{
+        float:none;
+        display: table;
+        width:100%;
+    }
+    header .logo_box a{
+        display: block;
+        float:left;
+        
+    }
+    
+
+    header .logo_box span{
+        display: block;
+        float:right;
+        text-transform: uppercase;
+    }
     .container{
         width: 100%;
     }
@@ -243,5 +416,11 @@ padding-top: 15px;
 
     .service-section .col{
         width:100%;
+    }
+
+    .recent-post .col{
+     float:none;
+     width: 100%;
+     padding-bottom: 30px;
     }
 }
